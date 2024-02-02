@@ -35,13 +35,16 @@ const App = () => {
 
   return (
     <div className="app-container">
+
+      <h1> Employee Data Table </h1>
       <table className="members-table">
         <thead>
+        
           <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
-            <th>Member</th>
+            <th>Role</th>
           </tr>
         </thead>
         <tbody>
@@ -60,9 +63,9 @@ const App = () => {
           Previous
         </button>
         <span className="pagination-info">
-          Page {currentPage} of {totalPages}
+           {currentPage} 
         </span>
-        <button onClick={handleClickNext}>
+        <button onClick={handleClickNext} disabled={currentPage === totalPages}>
           Next
         </button>
       </div>
