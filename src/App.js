@@ -60,8 +60,7 @@ const App = () => {
           Previous
         </button>
         <span className="pagination-info">
-          {" "}
-          Page {currentPage} of {totalPages}{" "}
+          Page {currentPage} of {totalPages}
         </span>
         <button onClick={handleClickNext} disabled={currentPage === totalPages}>
           Next
